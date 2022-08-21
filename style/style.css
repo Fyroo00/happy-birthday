@@ -61,7 +61,7 @@ html {
   .four .text-box {
     width: 600px;
     margin: 0 auto;
-    border: 3px solid rgb(196, 60, 180);
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 5px;
     padding: 10px;
     position: relative;
@@ -81,7 +81,7 @@ html {
     right: 5px;
     bottom: 5px;
     color: #fff;
-    background-color: rgb(21, 161, 237);
+    background-color: rgb(48, 106, 32);
     padding: 5px 8px;
     border-radius: 3px;
   }
@@ -119,8 +119,9 @@ html {
   
   .six img {
     display: inline-block;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
+    filter:drop-shadow(5px 5px 5px black)
   }
   
   .six .hat {
