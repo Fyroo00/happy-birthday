@@ -42,25 +42,25 @@ const animationTimeline = () => {
     opacity: 0,
     y: -20,
     rotationX: 5,
-    skewX: "15deg"
+    skewX: "0deg"
   };
 
   const ideaTextTransLeave = {
     opacity: 0,
     y: 20,
     rotationY: 5,
-    skewX: "-15deg"
+    skewX: "0deg"
   };
 
   const tl = new TimelineMax();
 
   tl
-    .to(".container", 0.1, {
+    .to(".container", 0.2, {
       visibility: "visible"
     })
-    .from(".one", 0.7, {
+    .from(".one", 1, {
       opacity: 0,
-      y: 10
+      y: 100
     })
     .from(".two", 0.4, {
       opacity: 0,
@@ -68,12 +68,12 @@ const animationTimeline = () => {
     })
     .to(
       ".one",
-      0.7,
+      0.6,
       {
         opacity: 0,
         y: 10
       },
-      "+=2.5"
+      "+=2.3"
     )
     .to(
       ".two",
@@ -135,10 +135,10 @@ const animationTimeline = () => {
     .to(".idea-3 strong", 0.5, {
       scale: 1.2,
       x: 10,
-      backgroundColor: "rgb(21, 161, 237)",
+      backgroundColor: "rgb(212, 59, 199)",
       color: "#fff"
     })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-3", 0.7, ideaTextTransLeave, "+=5")
     .from(".idea-4", 0.7, ideaTextTrans)
     .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
     .from(
@@ -158,7 +158,7 @@ const animationTimeline = () => {
       ".idea-5 .smiley",
       0.7,
       {
-        rotation: -90,
+        rotation: 25,
         x: 8
       },
       "+=0.4"
@@ -287,7 +287,7 @@ const animationTimeline = () => {
       ".last-smile",
       0.5,
       {
-        rotation: -90
+        rotation: 25
       },
       "+=1"
     );
